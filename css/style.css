@@ -466,7 +466,7 @@ header {
 .about {
   position: relative;
   width: 80%;
-  margin: 6rem auto;
+  margin: 0rem auto;
   padding: 2rem 0;
   padding-top: 15vh;
   color: #464D33;
@@ -652,7 +652,6 @@ footer {
   grid-template-rows: auto auto auto;
   z-index: 0;
   font-size: 1.125rem;
-  justify-content: center;
 }
 
 .footer-row {
