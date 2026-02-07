@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Us Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header role="banner">
+    <nav role="navigation" aria-label="Primary Navigation" class="navbar">
+
+      <div class="nav-left">
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="index.html" class="logo" aria-label="For Us Bakery Home">
+          <img src="images/ForUsLogo.svg" alt="For Us Bakery Logo" class="logo-img">
+        </a>
+      </div>
+
+      <ul class="nav-center">
+        <li><a href="#">Snow Skin Mooncakes</a></li>
+        <li><a href="#">Cream Puffs</a></li>
+        <li><a href="product.html">Crepe Cakes</a></li>
+        <li><a href="#">Tarts</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button aria-label="Search"><i data-lucide="search"></i></button>
+        <button aria-label="Profile"><i data-lucide="user"></i></button>
+        <button aria-label="Cart"><i data-lucide="shopping-bag"></i></button>
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="content">
+    <section class="hero" role="region" aria-label="Hero Section">
+      <div class="hero-content">
+        <h1>Spreading love through every dessert</h1>
+        <a href="#featured-products" class="btn">for you</a>
+      </div>
+    </section>
+
+    <section id="featured-products" class="featured-products" role="region" aria-label="Newly Featured Products">
+      <h2>Newly Featured</h2>
+      <div class="products-row">
+        <article class="product-item">
+          <a href="taro-snow-skin-mooncake.html" class="product-link">
+            <div class="product-image">
+              <img src="images/taro-snow-skin-mooncake.png" alt="Taro snow skin mooncake" class="main-img">
+              <img src="images/taro-snow-skin-mooncake-hover.png" alt="Taro snow skin mooncake filling"
+                class="hover-img">
+            </div>
+            <h3>Taro</h3>
+            <h3>Mooncake</h3>
+
+          </a>
+          <p>From $8.25</p>
+          <button>Add to Cart</button>
+        </article>
+
+        <article class="product-item">
+          <a href="black-sesame.html" class="product-link">
+            <div class="product-image">
+              <img src="images/black-sesame-snow-skin-mooncake.png" alt="Black sesame snow skin mooncake"
+                class="main-img">
+              <img src="images/black-sesame-snow-skin-mooncake-hover.png" alt="Black sesame snow skin mooncake filling"
+                class="hover-img">
+            </div>
+            <h3>Black Sesame</h3>
+            <h3>Mooncake</h3>
+
+          </a>
+          <p>From $8.25</p>
+          <button>Add to Cart</button>
+        </article>
+
+        <article class="product-item">
+          <a href="red-bean-lotus-seed-snow-skin-mooncake.html" class="product-link">
+            <div class="product-image">
+              <img src="images/red-bean-lotus-seed-snow-skin-mooncake.png" alt="Red bean lotus seed snow skin mooncake"
+                class="main-img">
+              <img src="images/red-bean-lotus-seed-snow-skin-mooncake-hover.png"
+                alt="Red bean lotus seed snow skin mooncake filling" class="hover-img">
+            </div>
+            <h3>Red Bean Lotus Seed</h3>
+            <h3>Mooncake</h3>
+
+          </a>
+          <p>From $8.25</p>
+          <button>Add to Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter" role="region" aria-label="Email Subscription">
+      <div class="newsletter-container">
+        <h2>Subscribe to our emails</h2>
+        <p>Be the first to know about new collections and exclusive offers</p>
+        <form action="#" method="post">
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer role="contentinfo" aria-label="Footer Navigation">
+    <div class="footer-row footer-details">
+      <div class="footer-col">
+        <p>1-1353 Mcphillips Street, Winnipeg, MB</p>
+        <p>(204) 334-8880</p>
+        <p>forusbakerywinnipeg@gmail.com</p>
+        <p>Instagram: @for_us_bakery</p>
+      </div>
+
+      <div class="footer-col">
+        <p><strong>Hours</strong></p>
+        <p>Mon-Tues: Closed</p>
+        <p>Wed-Sat: 11:30 - 7:00</p>
+        <p>Sun: 12:00 - 5:00</p>
+      </div>
+
+      <div class="footer-col">
+        <p><a href="#">Snow Skin Mooncakes</a></p>
+        <p><a href="#">Cream Puffs</a></p>
+        <p><a href="product.html">Crepe Cakes</a></p>
+        <p><a href="#">Tarts</a></p>
+      </div>
+    </div>
+
+    <div class="footer-row footer-name">
+      <h2>for us bakery</h2>
+    </div>
+
+    <div class="footer-row footer-copy">
+      <div class="footer-col">© 2025 | For Us Bakery</div>
+      <div class="footer-col">Terms of Use | Privacy Policy</div>
+      <div class="footer-col">Ryland San Miguel</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+
+</body>
+
+</html>

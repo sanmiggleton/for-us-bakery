@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Us Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header role="banner">
+  <nav role="navigation" aria-label="Primary Navigation" class="navbar">
+
+    <div class="nav-left">
+      <button class="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="index.html" class="logo" aria-label="For Us Bakery Home">
+        <img src="images/ForUsLogo.svg" alt="For Us Bakery Logo" class="logo-img">
+      </a>
+    </div>
+
+    <ul class="nav-center">
+      <li><a href="#">Snow Skin Mooncakes</a></li>
+      <li><a href="#">Cream Puffs</a></li>
+      <li><a href="product.html">Crepe Cakes</a></li>
+      <li><a href="#">Tarts</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button aria-label="Search"><i data-lucide="search"></i></button>
+      <button aria-label="Profile"><i data-lucide="user"></i></button>
+      <button aria-label="Cart"><i data-lucide="shopping-bag"></i></button>
+    </div>
+
+  </nav>
+</header>
+
+  <div class="content">
+    <section class="product-detail" role="region" aria-label="Product Details">
+      <div class="product-container">
+        <!-- Left Column: Images -->
+        <div class="product-images">
+          <!-- Main display image -->
+          <div class="main-image">
+            <img id="mainDisplay" src="images/tiramisu-oreo-crepe-cake.jpeg" alt="Main view of tiramisu oreo crepe cake">
+          </div>
+        
+          <div class="thumbnail-gallery">
+            <img class="thumbnail" src="images/tiramisu-oreo-crepe-cake.jpeg" alt="Tiramisu crepe cake close-up">
+            <img class="thumbnail" src="images/tiramisu-oreo-crepe-cake-2.jpeg" alt="Tiramisu crepe cake close-up">
+            <img class="thumbnail" src="images/tiramisu-oreo-crepe-cake-3.jpeg" alt="Tiramisu crepe cake close-up">
+          </div>
+        </div>
+    
+        <div class="product-info">
+          <h1 class="product-name">Tiramisu Oreo Crepe Cake</h1>
+          <p class="product-price">$68.00</p>
+          <p class="product-description">
+            Perfect blend of rich tiramisu and crunchy Oreos with our Tiramisu Oreo Crepe Cake. Layers of delicate crepes are filled with a creamy tiramisu filling and studded with chunks of Oreo cookies. Enjoy this unique twist on a classic dessert.
+          </p>
+          <div class="product-sizes">
+            <p>Sizes:</p>
+            <ul>
+              <li>6” (serves 3–5)</li>
+              <li>8.5” (serves 8–10)</li>
+            </ul>
+          </div>
+          <p class="product-disclaimer"><em>Please allow 2 days’ notice for preparation</em></p>
+
+          <div class="product-size">
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+              <option value="small">6 inches</option>
+              <option value="medium">8.5 inches</option>
+            </select>
+          </div>
+    
+          <div class="quantity-selector">
+            <label for="quantity" class="sr-only">Quantity</label>
+            <button class="qty-btn" id="decrease" aria-label="Decrease quantity">−</button>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+            <button class="qty-btn" id="increase" aria-label="Increase quantity">+</button>
+          </div>
+    
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="featured-products recommended" role="region" aria-label="Newly Featured Products">
+      <h2>You may also like:</h2>
+      <div class="products-row">
+        <article class="product-item">
+          <a href="matcha-strawberry-tiramisu-crepe-cake.php" class="product-link">
+            <div class="product-image">
+              <img src="images/matcha-strawberry-tiramisu.jpeg" alt="Matcha Strawberry Tiramisu Crepe Cake" class="main-img">
+            </div>
+            <h3>Matcha Strawberry Crepe Cake</h3>
+          </a>
+        
+          <p>From $69.00</p>
+          <button>Add to Cart</button>
+        </article>
+    
+        <article class="product-item">
+          <a href="ferrero-rocher-crepe-cake.php" class="product-link">
+            <div class="product-image">
+              <img src="images/ferrero-rocher.jpeg" alt="Ferrero Rocher Crepe Cake" class="main-img">
+            </div>
+            <h3>Ferrero Rocher Crepe Cake</h3>
+          </a>
+        
+          <p>From $72.00</p>
+          <button>Add to Cart</button>
+        </article>
+    
+        <article class="product-item">
+          <a href="raspberry-rose-crepe-cake.php" class="product-link">
+            <div class="product-image">
+              <img src="images/raspberry-rose.jpeg" alt="Raspberry Rose Crepe Cake" class="main-img">
+            </div>
+            <h3>Raspberry Rose Crepe Cake</h3>
+          </a>
+        
+          <p>From $62.00</p>
+          <button>Add to Cart</button>
+        </article>
+      </div>
+    </section>
+    
+    <section class="newsletter" role="region" aria-label="Email Subscription">
+      <div class="newsletter-container">
+        <h2>Subscribe to our emails</h2>
+        <p>Be the first to know about new collections and exclusive offers</p>
+        <form action="#" method="post">
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">          
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer role="contentinfo" aria-label="Footer Navigation">
+    <div class="footer-row footer-details">
+      <div class="footer-col">
+        <p>1-1353 Mcphillips Street, Winnipeg, MB</p>
+        <p>(204) 334-8880</p>
+        <p>forusbakerywinnipeg@gmail.com</p>
+        <p>Instagram: @for_us_bakery</p>
+      </div>
+  
+      <div class="footer-col">
+        <p><strong>Hours</strong></p>
+        <p>Mon-Tues: Closed</p>
+        <p>Wed-Sat: 11:30 - 7:00</p>
+        <p>Sun: 12:00 - 5:00</p>
+      </div>
+  
+      <div class="footer-col">
+        <p><a href="#">Snow Skin Mooncakes</a></p>
+        <p><a href="#">Cream Puffs</a></p>
+        <p><a href="product.html">Crepe Cakes</a></p>
+        <p><a href="#">Tarts</a></p>
+      </div>
+    </div>
+  
+    <div class="footer-row footer-name">
+      <h2>for us bakery</h2>
+    </div>
+  
+    <div class="footer-row footer-copy">
+      <div class="footer-col">© 2025 | For Us Bakery</div>
+      <div class="footer-col">Terms of Use | Privacy Policy</div>
+      <div class="footer-col">Ryland San Miguel</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+  
+</body>
+</html>

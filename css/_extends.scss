@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+%notification {
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: $border-radius;
+    border: 1px solid $primary-color;
+    border-left: 0.5rem solid $primary-color;
+    background-color: #fff;
+}
